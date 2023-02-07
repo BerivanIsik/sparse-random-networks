@@ -6,3 +6,25 @@ PyTorch implementation of the FedPM framework by the authors of the ICLR 2023 pa
 > International Conference on Learning Representations (ICLR), 2023. <br/>
 
 
+## Environment setup:
+Packages can be found in `fedpm.yml`.
+
+## Training:
+Set the `params_path` in `main.py` to the the path of the `{}.yaml` file with the desired model and dataset. The default parameters can be found in the provided `{}.yaml` files. To train the model to be compressed, run:
+
+```
+python3 main.py
+```
+
+## References
+If you find this work useful in your research, please consider citing our paper:
+```
+@inproceedings{
+isik2023sparse,
+title={Sparse Random Networks for Communication-Efficient Federated Learning},
+author={Berivan Isik and Francesco Pase and Deniz Gunduz and Tsachy Weissman and Zorzi Michele},
+booktitle={International Conference on Learning Representations},
+year={2023},
+url={https://openreview.net/forum?id=k1FHgri5y3-}
+}
+```
