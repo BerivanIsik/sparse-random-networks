@@ -10,7 +10,7 @@ PyTorch implementation of the FedPM framework by the authors of the ICLR 2023 pa
 Packages can be found in `fedpm.yml`.
 
 ## Training:
-Set the `params_path` in `main.py` to the the path of the `{}.yaml` file with the desired model and dataset. The default parameters can be found in the provided `{}.yaml` files. To train the model to be compressed, run:
+Set the `params_path` in `main.py` to the the path of the `{}.yaml` file with the desired model and dataset. The default parameters can be found in the provided `{}.yaml` files. To train the model, run:
 
 ```
 python3 main.py
