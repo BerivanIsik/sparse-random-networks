@@ -1,0 +1,36 @@
+# Simulation paramters
+path:
+  path: 'params_mnist_conv.yaml'
+
+simulation:
+  tot_sims: 3
+  sampled_clients: 200 # 500
+  n_clients: 200 # 500
+  n_rounds: 100
+  n_test_samples: 3
+  verbose: 0
+
+# Parameters for the neural networks
+model :
+  id: 'conv2'
+  mode: 'mask' # [mask, dense]
+  local_epochs: 3 # 3c
+  batch_size: 128
+  pruned_ths: 0.5
+  init: 'ME_init'
+  activation: 'relu'
+
+  optimizer:
+    type: 'base' # [fedavg, client_momentum, sign_sgd, base, tern_grad, mv_sign_sgd, qsgd, drive, eden]
+    local_lr: 0.01
+
+    # client_momentum
+    mu: 0.9
+    weight_decay: 0.0001
+    dampening: 0
+
+# Parameters for the dataset
+data:
+  dataset: 'mnist' # [cifar10, mnist]
+  split: 'iid' # {iid, non-iid}
+  classes_pc: 1

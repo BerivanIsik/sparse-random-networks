@@ -1,0 +1,37 @@
+# Simulation paramters
+path:
+  path: 'params.yaml'
+
+simulation:
+  tot_sims: 3
+  sampled_clients: 10
+  n_clients: 10
+  n_rounds: 200
+  n_test_samples: 3
+  verbose: 0
+
+# Parameters for the neural networks
+model :
+  id: 'conv6'
+  mode: 'mask' # [mask, dense]
+  local_epochs: 3
+  batch_size: 128
+  pruned_ths: 0.5
+  init: 'ME_init'
+  activation: 'relu'
+
+  optimizer:
+    type: 'base' # [fedavg, client_momentum, sign_sgd, base, tern_grad, mv_sign_sgd, qsgd, drive, eden]
+    local_lr: 0.01
+    clip_scalar: 2.5
+
+    # client_momentum
+    mu: 0.9
+    weight_decay: 0.0001
+    dampening: 0
+
+# Parameters for the dataset
+data:
+  dataset: 'cifar10' # [cifar10, cifar100, mnist, emnist]
+  split: 'iid' # [iid, non-iid]
+  classes_pc: 4
