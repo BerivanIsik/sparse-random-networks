@@ -6,7 +6,7 @@ PyTorch implementation of the FedPM framework by the authors of the ICLR 2023 pa
 > International Conference on Learning Representations (ICLR), 2023. <br/>
 
 
-## Environment setup:
+## Environment setup :
 Packages can be found in `fedpm.yml`.
 
 ## Training:
