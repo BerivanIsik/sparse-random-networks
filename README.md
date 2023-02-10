@@ -23,7 +23,7 @@ If you find this work useful in your research, please consider citing our paper:
 isik2023sparse,
 title={Sparse Random Networks for Communication-Efficient Federated Learning},
 author={Berivan Isik and Francesco Pase and Deniz Gunduz and Tsachy Weissman and Zorzi Michele},
-booktitle={International Conference on Learning Representations},
+booktitle={The Eleventh International Conference on Learning Representations },
 year={2023},
 url={https://openreview.net/forum?id=k1FHgri5y3-}
 }
